@@ -1,0 +1,9 @@
+<h3><%= file_name %></h3>
+<h4>Size : <%= file_size %> </h4>
+<h4>Upload date: <%= uploaded_at %> </h4>
+<form action="/files/download/<%= file_uuid %>" method="POST">
+  <% if(hasPassword){ %>
+  <input type="password" name="password" placeholder="Enter the file password" required/> 
+  <% } %>
+  <button type="submit">Download</button>
+</form>

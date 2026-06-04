@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="sidebar">
+        <h3 class="sidebar-title"><%= typeof username !== 'undefined' ? username : 'FileUP' %></h3>
+        <hr>
+        <ul>
+ <% if(typeof username !== "undefined"){ %> 
+          <li><a href="/dashboard">dashboard</a></li>
+          <li><a href="/files/upload">upload</a></li>
+
+          <li><a href="/auth/login">Login</a></li>
+          <% } %>
+        </ul>
+      </div>
+
+      <main class="main">
+        <%- body %> 
+      </main>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,123 @@
+:root{
+  --bg:#0A0A0A;
+  --surface: #121212;
+  --surface-2: #1E1E1E;
+  --border: #2A2A2A;
+  --text:#F5F5F5;
+  --text-secondary:#A1A1AA;
+  --text-muted:#71717A;
+  --accent:#FFFFFF;
+  --hover:#303030;
+  --active:#404040;
+}
+
+body {
+  background-color:var(--bg);
+  color: var(--text);
+  padding:0;
+  margin:0;
+  font-family:sans-serif;
+}
+
+.layout{
+  display:flex;
+  height:100vh;
+}
+
+.sidebar{
+  width:240px;
+  height:100vh;
+  background:var(--surface);
+  border-right:1px solid var(--border);
+  user-select:none;
+}
+
+.sidebar-title{
+ padding-inline:20px; 
+}
+.sidebar ul{
+  list-style:none;
+  padding:0;
+  width:100%;
+}
+.sidebar ul li{
+  padding-inline:10px;
+}
+.sidebar ul li a{
+  color:var(--text-secondary);
+  text-decoration:none;
+  display:block;
+  padding-block:5px;
+  border-bottom:1px solid var(--border);
+}
+.sidebar ul li a:hover{
+  color:var(--hover)
+}
+
+.main{
+  padding-inline:10px;
+  flex:1;
+}
+
+.login{
+  padding-bottom:50px;
+  padding-top:25px;
+  padding-inline:75px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  margin-inline:auto;
+  margin-top:100px;
+  width:300px;
+  display:flex;
+  flex-direction:column;
+  background-color:var(--surface);
+}
+
+.login input{
+  outline:none;
+  border:none;
+  padding-block:3px;
+  padding-inline:5px;
+  border-radius:3px;
+  margin-bottom:5px;
+}
+.login button{
+  margin-top:5px;
+  margin-bottom:3px;
+  background-color:var(--accent);
+  border:1px solid var(--border);
+  border-radius:3px;
+  padding:5px;
+}
+.login button:hover{
+  cursor:pointer;
+}
+
+.files-list{
+  list-style:none;
+  margin-top:5px;
+  padding:0;
+}
+.files-list li{
+  display:flex;
+  padding-inline:10px;
+  padding-block:5px;
+  justify-content:space-between;
+  background:var(--surface);
+  margin-top:3px;
+  border-radius:5px;
+}
+.files-list li a{
+  text-decoration:none;
+  color:white;
+
+}
+.files-list li form button{
+  background:red;
+  color:white;
+  padding-inline:5px;
+  padding-block:2px;
+  border:none;
+  outline:none;
+  border-radius:3px;
+}

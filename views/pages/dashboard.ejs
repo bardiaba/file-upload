@@ -1,0 +1,7 @@
+<h1>FileUP</h1>
+<h3>Your files:</h3>
+<ul class="files-list">
+  <% for (var i = 0; i < uploads.length; i++) { upload = uploads[i]%>
+  <li><a href="/files/<%= upload.uuid %>"><%= upload.file_name %> </a><form action="/files/delete/<%= upload.uuid %>" method="POST"><button type="submit">Delete</button></form></li>
+  <% } %>
+</ul>
