@@ -38,7 +38,7 @@ JWT_KEY=your_secret_key
 ```
 5. Run the project
 ```bash
-DEBUG=file-up:* npm start
+DEBUG=file-upload:* npm start
 ```
 6. Open your browser and visit **localhost:3000**
 
