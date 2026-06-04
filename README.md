@@ -14,15 +14,19 @@ The main purpose of this project is to understand how to connect to MySQL and ho
 - JSON Web Token (JWT)
 
 ## Installation Setup
-1. Install dependencies
+1. Clone the repository
+```bash
+git clone https://github.com/bardiaba/file-upload.git
+```
+2. Install dependencies
 ```bash
 npm install
 ```
-2. Setup MySQL database
+3. Setup MySQL database
 ```bash
 mysql -u USER -p < db.sql
 ```
-3. Configure environment variables
+4. Configure environment variables
 Create a `.env` file in the root directory:
 ```Environment
 DB_HOST=
@@ -32,14 +36,13 @@ DB_PASSWORD=
 
 JWT_KEY=your_secret_key
 ```
-4. Run the project
+5. Run the project
 ```bash
 DEBUG=file-up:* npm start
 ```
-5. Open your browser and visit **localhost:3000**
+6. Open your browser and visit **localhost:3000**
 
 ## Disclaimer
 - This project is not production-ready
 - It lacks advanced security features (validations, rate limiting, etc.)
 - It is intended only for learning and practice
-
